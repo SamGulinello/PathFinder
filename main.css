@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+}
+
+#maze-container {
+    display: grid;
+    grid-template-columns: repeat(90, 10px);
+    grid-template-rows: repeat(40, 10px);
+    gap: 5px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.field {
+    background-color: white;
+}
+
+.path {
+    background-color: red;
+}
+
+.start {
+    background-color: blue;
+}
+
+.end {
+    background-color: green;
+}
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
